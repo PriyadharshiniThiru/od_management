@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student OD Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Student OD Management System</h1>
+
+  <div class="form">
+    <input type="text" id="name" placeholder="Student Name">
+    <input type="text" id="odreason" placeholder="OD Reason">
+    <input type="text" id="event" placeholder="Event Name">
+    <input type="date" id="date">
+    <input type="number" id="hour" placeholder="Hour">
+    <button id="submit" onclick="addStudent()">Add Record</button>
+  </div>
+
+  <input type="text" id="search" onkeyup="search()" placeholder="Search by Name, Event, or Reason">
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Student Name</th>
+        <th>OD Reason</th>
+        <th>Event Name</th>
+        <th>Date</th>
+        <th>Hour</th>
+      </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
